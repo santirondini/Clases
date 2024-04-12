@@ -23,11 +23,13 @@ martina :: Hobbit
 martina = ("Martina",105)
 
 --Funciones de acceso
+--Para acceder a los datos de las duplas, se crean estas funciones:
 
 nombreD = fst
 alturaD = snd
 
-
+--Ejercicios: 
+-- 1) La reputación de un Hobbit es la cantiad de letras de su nombre * altura
 reputacionDeHobbit :: Hobbit->Reputacion
 reputacionDeHobbit hobbit = length(nombreD hobbit)*alturaD hobbit 
 
@@ -36,6 +38,10 @@ diferenciaDeAltura h1 h2 = abs(alturaD h1 - alturaD h2)
 
 lista :: ListaHobbits 
 lista = [bilbo,rosita,martina,juan,marcos] --Creación de lista
+
+--La lista tiene el siguiente formato:
+--Al primero se lo llama head, al ultimo last, a lo que sigue despues del primero tail y a lo que le antecede 
+--al ultimo innit:
 
 primero :: ListaHobbits->Hobbit 
 primero = head
@@ -56,7 +62,7 @@ tresPrimeros = take 3
 elResto :: ListaHobbits->[Hobbit]
 elResto = drop 3
 
---Data: distintos tipos de dato en una misma variable:
+-- Data: distintos tipos de dato en una misma variable:
 -- data Nombre = nombreParaCrearlo
 
 data SuperHobbit = SuperHobbit{
