@@ -88,4 +88,3 @@ gonzalo = SuperHobbit {
     edad = 17
 }
 
---Cambiar en Haskell 
