@@ -38,9 +38,10 @@ capicua lista = lista == reverse lista
 
 larga,empiezaConA,capicua :: [Char]->Bool
 
--- any : buscador generico | any empiezaConA ["arbol","chau","bareiro"] / True 
--- filter : filtra lo que le pidas | filter even [1,2,3,4,5,6,7] / 2 4 6
-
+{- 
+any : buscador generico | any empiezaConA ["arbol","chau","bareiro"] / True 
+filter : filtra lo que le pidas | filter even [1,2,3,4,5,6,7] / 2 4 6
+-}
 -- f1 aplica la funcion pero con los parametros al reves, buscar flip 
 f1 x y z = z y x  -- Como z al lado tiene argumentos, tiene que ser a funcion. Recibe dos argumentos 
 
@@ -55,3 +56,14 @@ f4 w e r
        | otherwise = e 
 
 --Buscar map, all, foldl1, foldl, zipWith, flip, ., $ 
+{-
+map: Toma una función y una lista como argumentos, y aplica esa función a cada elemento de la lista, devolviendo una nueva lista con los resultados.
+all: Toma una función que devuelve un booleano y una lista como argumentos, y verifica si todos los elementos de la lista satisfacen la condición dada por la función.
+foldl1: Toma una función binaria y una lista no vacía, y aplica la función binaria de izquierda a derecha a los elementos de la lista,
+comenzando por el primer elemento y usando el resultado acumulado como el primer argumento de la siguiente aplicación.
+foldl: Similar a foldl1, pero toma un valor inicial como primer argumento y lo utiliza como valor acumulado en la primera aplicación de la función.
+zipWith: Toma una función binaria y dos listas como argumentos, y aplica la función a pares de elementos correspondientes de las dos listas, devolviendo una nueva lista con los resultados.
+flip: Toma una función binaria y devuelve una nueva función que toma los mismos argumentos pero con el orden de los dos primeros argumentos intercambiados.
+. (composición de funciones): Toma dos funciones como argumentos y devuelve una nueva función que es la composición de esas dos funciones. La salida de la segunda función se convierte en la entrada de la primera función.
+$ (aplicación de función de bajo precedencia): Toma una función y un valor como argumentos, y aplica la función al valor. Es útil para evitar la necesidad de utilizar paréntesis para la aplicación de funciones, ya que tiene una precedencia muy baja.
+-}
