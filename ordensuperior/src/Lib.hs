@@ -74,6 +74,8 @@ flip: Toma una función binaria y devuelve una nueva función que toma los mismo
 La salida de la segunda función se convierte en la entrada de la primera función.
 
 $ (aplicación de función de bajo precedencia): Toma una función y un valor como argumentos, y aplica la función al valor. 
-Es útil para evitar la necesidad de utilizar paréntesis para la aplicación de funciones, ya que tiene una precedencia muy baja.
+Es útil para evitar la necesidad de utilizar paréntesis para la aplicación de funciones, ya que tiene una precedencia muy baja.}
+
+" : " : concatena un valor en una lista | POR CONSOLA / 1 : [2,3,4,5] / [1,2,3,4,5]
 
 -}
