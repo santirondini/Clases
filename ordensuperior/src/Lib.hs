@@ -78,4 +78,6 @@ Es útil para evitar la necesidad de utilizar paréntesis para la aplicación de
 
 " : " : concatena un valor en una lista | POR CONSOLA / 1 : [2,3,4,5] / [1,2,3,4,5]
 
+init : todo menos el ultimo de una lista 
+
 -}
