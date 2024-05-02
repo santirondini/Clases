@@ -88,7 +88,9 @@ data Libro = UnLibro {
     paginas :: Int
 }
 
-listaDePaginas libro = map paginas libro
+listaDePaginas listaDeLibros = map paginas listDeLibros || DEVUELVE UNA LISTA SOLO DE PAGINAS
+
+listaDeNombres biblioteca = map nombre biblioteca || AGARRA UNA LISTA DE LIBROS Y DEVUELVE OTRA SOLO CON LOS NOMBRES
 
 "any" : hay algún | any (funcion)(lista)
 
