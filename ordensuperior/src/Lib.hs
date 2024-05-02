@@ -80,4 +80,17 @@ Es útil para evitar la necesidad de utilizar paréntesis para la aplicación de
 
 init : todo menos el ultimo de una lista 
 
+NOTA SUPER IMPORATANTE: siempre que tengas una lista de un data, y adentro de ese data alla un numero con el que quieras trabajar, crea una lista con esos numeros:
+
+data Libro = UnLibro {
+    autor :: String,
+    nombre :: String,
+    paginas :: Int
+}
+
+listaDePaginas libro = map paginas libro
+
+"any" : hay algún | any (funcion)(lista)
+
+
 -}
