@@ -92,5 +92,7 @@ listaDePaginas libro = map paginas libro
 
 "any" : hay algún | any (funcion)(lista)
 
+"elem" : si ese elemento esta en la lista | elem 1 [1,2,3,4] TRUE
+
 
 -}
