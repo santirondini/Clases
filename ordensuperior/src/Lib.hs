@@ -96,5 +96,10 @@ listaDeNombres biblioteca = map nombre biblioteca || AGARRA UNA LISTA DE LIBROS 
 
 "elem" : si ese elemento esta en la lista | elem 1 [1,2,3,4] TRUE
 
+"takeWhile" : toma mientras. Toma valores de una lista y los almacena en otra hasta que uno de los elementos no cumpla la condición. EL ELEMENTO QUE FRENA LA FUNCIÓN NO SE AGREGA A LA LISTA.
+takeWhile (<4) [1,2,3,4,5,6] | RETURN [1,2,3] ==> Mientras sean menores a cuatro, los saca de la lista y los pone en otra.
+
+
+
 
 -}
