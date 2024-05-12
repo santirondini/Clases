@@ -99,7 +99,10 @@ listaDeNombres biblioteca = map nombre biblioteca || AGARRA UNA LISTA DE LIBROS 
 "takeWhile" : toma mientras. Toma valores de una lista y los almacena en otra hasta que uno de los elementos no cumpla la condición. EL ELEMENTO QUE FRENA LA FUNCIÓN NO SE AGREGA A LA LISTA.
 takeWhile (<4) [1,2,3,4,5,6] | RETURN [1,2,3] ==> Mientras sean menores a cuatro, los saca de la lista y los pone en otra.
 
+"concat" : concatena lista dentro de una lista mayor
 
+
+"(\f->f evento)": se le aplica una función (seguramente de una lista de funciones) a un evento o tipo que se quiera 
 
 
 -}
