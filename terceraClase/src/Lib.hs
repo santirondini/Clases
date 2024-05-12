@@ -4,7 +4,7 @@ type Altura = Int
 type Reputacion = Int
 type Hobbit = (Nombre,Altura) --Declaración de Hobbit 
 type ListaHobbits = [Hobbit] --Declaración de la lista de Hobbits
-
+type ListaSuperHobbits = [SuperHobbit]
 --Declaración de los Hobbits
 
 bilbo :: Hobbit
@@ -80,6 +80,14 @@ matias = SuperHobbit {
     edad = 20
 }
 
+fermin :: SuperHobbit
+fermin = SuperHobbit {
+    nombre = "Fermin",
+    estatura = 154,
+    fuerza = 17,
+    edad = 19 
+}
+
 gonzalo :: SuperHobbit
 gonzalo = SuperHobbit {
     nombre = "Gonzalo",
@@ -87,4 +95,16 @@ gonzalo = SuperHobbit {
     fuerza = 15,
     edad = 17
 }
+
+
+
+sista :: [SuperHobbit]
+sista = [gonzalo,matias,fermin]
+
+mostrarNombre :: SuperHobbit->String
+mostrarNombre = nombre  
+
+primerNombre :: [SuperHobbit]->SuperHobbit
+primerNombre = head
+
 
