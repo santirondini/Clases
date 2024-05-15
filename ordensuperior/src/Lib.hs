@@ -101,8 +101,16 @@ takeWhile (<4) [1,2,3,4,5,6] | RETURN [1,2,3] ==> Mientras sean menores a cuatro
 
 "concat" : concatena lista dentro de una lista mayor
 
+"(\f -> f evento)": se le aplica una función (seguramente de una lista de funciones) a un evento o tipo que se quiera. Ojo, pueden haber veces donde haya que poner ambas variables como argumentos:
 
-"(\f->f evento)": se le aplica una función (seguramente de una lista de funciones) a un evento o tipo que se quiera 
+foldl:: a->[a->a]->a
+utilizar a [a] = foldl (\ a (f de [a]) -> (f de [a]) a ) a [a]
 
+
+-- Función para insertar un elemento en una posición específica de una lista
+insertarEnPosicion :: Int -> a -> [a] -> [a]
+insertarEnPosicion n elemento lista = take n lista ++ [elemento] ++ drop n lista
+
+import Data.List (sort) ==> importar el sort para ordenar listas
 
 -}
