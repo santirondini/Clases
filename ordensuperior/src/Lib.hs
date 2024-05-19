@@ -113,4 +113,11 @@ insertarEnPosicion n elemento lista = take n lista ++ [elemento] ++ drop n lista
 
 import Data.List (sort) ==> importar el sort para ordenar listas
 
+letrasSignificativas :: [Char]->Int
+letrasSignificativas [] = 0
+letrasSignificativas (x:xs)
+                            | x /= ' ' || distintoAUnNumero x = 1 + letrasSignificativas xs
+                            | otherwise = letrasSignificativas xs
+
+
 -}
