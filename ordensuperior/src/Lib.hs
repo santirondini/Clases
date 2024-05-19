@@ -118,6 +118,8 @@ letrasSignificativas [] = 0
 letrasSignificativas (x:xs)
                             | x /= ' ' || distintoAUnNumero x = 1 + letrasSignificativas xs
                             | otherwise = letrasSignificativas xs
+read : pasa de String a Int
 
+digitToInt : de char a Int
 
 -}
