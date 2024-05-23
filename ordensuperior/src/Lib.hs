@@ -122,4 +122,11 @@ read : pasa de String a Int
 
 digitToInt : de char a Int
 
+words: Separa una oración en una lista de palabras | words "hola como estas" = ["hola","como","estas"]
+
+borrar :: String->[String]->[String]
+borrar  _ [] = []
+borrar aborrar (x:xs)
+                    | x == aborrar = borrar aborrar xs
+                    | otherwise = x : borrar aborrar xs
 -}
