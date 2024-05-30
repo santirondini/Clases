@@ -136,5 +136,8 @@ ciudadViveEventos ciudad (evento:eventos) = eventos ciudad : ciudadViveEventos e
 
 foldl1 (.) [eventos] = una sola función que aplique los eventos 
 
+*Main> zip [1,2,3] ["santino" , "rondini", "julian"]
+[(1,"santino"),(2,"rondini"),(3,"julian")]
+
 
 -}
