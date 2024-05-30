@@ -129,4 +129,8 @@ borrar  _ [] = []
 borrar aborrar (x:xs)
                     | x == aborrar = borrar aborrar xs
                     | otherwise = x : borrar aborrar xs
+
+ciudadViveEventos ciudadad [] = []
+ciudadViveEventos ciudad (evento:eventos) = eventos ciudad : ciudadViveEventos eventos ciudad
+
 -}
