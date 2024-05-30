@@ -100,12 +100,13 @@ listaDeNombres biblioteca = map nombre biblioteca || AGARRA UNA LISTA DE LIBROS 
 takeWhile (<4) [1,2,3,4,5,6] | RETURN [1,2,3] ==> Mientras sean menores a cuatro, los saca de la lista y los pone en otra.
 
 "concat" : concatena lista dentro de una lista mayor
+*Main> concat ["santino", "rondini"]
+"santinorondini"
 
 "(\f -> f evento)": se le aplica una función (seguramente de una lista de funciones) a un evento o tipo que se quiera. Ojo, pueden haber veces donde haya que poner ambas variables como argumentos:
 
 foldl:: a->[a->a]->a
 utilizar a [a] = foldl (\ a (f de [a]) -> (f de [a]) a ) a [a]
-
 
 -- Función para insertar un elemento en una posición específica de una lista
 insertarEnPosicion :: Int -> a -> [a] -> [a]
