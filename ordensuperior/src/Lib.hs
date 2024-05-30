@@ -133,4 +133,7 @@ borrar aborrar (x:xs)
 ciudadViveEventos ciudadad [] = []
 ciudadViveEventos ciudad (evento:eventos) = eventos ciudad : ciudadViveEventos eventos ciudad
 
+foldl1 (.) [eventos] = una sola función que aplique los eventos 
+
+
 -}
