@@ -139,5 +139,8 @@ foldl1 (.) [eventos] = una sola función que aplique los eventos
 *Main> zip [1,2,3] ["santino" , "rondini", "julian"]
 [(1,"santino"),(2,"rondini"),(3,"julian")]
 
+"!!" = recibe una lista y una posición. Devuelve el elemento en esa posición (arranca desde 0)
+ghci> [1,2,3,4,5] !! 3
+4
 
 -}
